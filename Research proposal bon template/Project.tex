@@ -1,0 +1,38 @@
+\documentclass[12pt]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage{cite}
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\Spec}{Spec}
+
+\title{Research statement}
+\author{Thibault Poiret}
+\date{March 2021}
+
+\begin{document}
+
+\maketitle
+
+My area of research is algebraic geometry. I am particularly interested in models of curves and abelian varieties.
+
+More specifically, my work of the past few years was about the theory of Néron models. If $X_K$ is a proper and smooth scheme over the fraction field $K$ of an integral scheme $S$, in general there is no way to extend $X_K$ into a proper and smooth scheme over $S$. For example, any elliptic curve $E$ over $\mathbb Q$ will have bad reduction at some primes, and we can only find a proper and smooth model of $E$ away from these primes. Therefore, in order to get a model $X$ of $X_K$ over all of $S$, we need to allow $X$ to be "less nice". If we care about smoothness, the Néron model is the next best thing. It is defined as a smooth $S$-model $N$ of $X_K$ with the \emph{Néron mapping property}: for any smooth $S$-scheme $Y$, the restriction map $\Hom_S(Y,N) \to \Hom_K(Y_K,X_K)$ is bijective. Néron models have a variety of applications. For example, they were used to prove the semistable reduction theorem and the Néron-Ogg-Shafarevitch criterion for good reduction of abelian varieties; they are useful to compute Néron-Tate heights on Jacobians; and they intervene in the Chabauty method to determine whether a list of rational points on a $\mathbb Q$-curve is exhaustive.
+
+The Néron model of $X_K$ is always unique, but does not always exist: even $\mathbb P^1_{\mathbb Q}$ has no Néron model over $\mathbb Z$. When $S$ is regular and one-dimensional (e.g. the spectrum of the ring of integers of a number field), then a separated Néron model exists if $X_K/K$ is an abelian variety (Néron, 1964) or a curve of positive genus (Liu and Tong, 2013). When $S$ is a regular scheme, $X_K$ a smooth $K$-curve and $X/S$ a nodal model of $X_K$, Holmes introduced a condition on $X$ called \emph{alignment}, expressed in terms of graphs summarizing information on $X$, the \emph{dual graphs}. He showed that the Jacobian $J$ of $X_K$ can only have a separated Néron model if X is aligned; and exhibited such a Néron model when $X$ is regular and aligned.
+
+During my PhD, I studied \emph{refinements} of a nodal curve $X/S$, i.e. morphisms $X' \to X$ which, locally on $S$, are compositions of blow-ups in the ideal sheaves of $S$-sections. I showed that $X'/S$ is a nodal curve, and described how to compute its Picard space and dual graph in terms of those of $X$. When $S$ is regular and $X/S$ is a nodal curve smooth over $K$, I constructed a Néron model $N/S$ for the Jacobian of $X_K$. This $N$ is obtained by gluing a locally finite number of local models, each expressed as a quotient of the Picard space of a refinement. I showed that $N$ is separated if and only if $X/S$ satisfies a combinatorial condition of the same nature as alignment, called \emph{strict alignment}. Then, I constructed a N\'eron model for the smooth curve $X_K$ itself, by gluing together the smooth loci of some \'etale-local refinements. I gave a simple geometric condition for this N\'eron model to be separated. I also studied the base change behavior of N\'eron models of abelian varieties under finite, tamely ramified covers of regular schemes. Together with David Holmes, Samouil Molcho and Giulio Orecchia, we described a natural compactification of the generic Jacobian $J$ in logarithmic geometry, the \emph{log Jacobian}. It is computable as a torsor under the Jacobian and over the sheaf of dual graphs. Taking its image under a natural functor from log schemes to schemes, we obtain the Néron model $N$ of $J$. In particular, this gives a moduli interpretation for $N$.
+
+
+I have several ideals of projects for my future research. For example, I would like to work towards a construction of Néron models for abelian varieties in full generality over regular schemes of arbitrary dimension. This can be attempted by
+
+\begin{itemize}
+\item Treating the case where the abelian variety has semi-abelian reduction (Progress in this direction has already been made by Giulio Orecchia)
+\item Reducing to the semiabelian case by combining Gabber's lemma with a descent argument. This requires studying the descent behavior of Néron models of abelian varieties under modifications and finite covers of the base. This is done in my thesis for finite, tamely ramified covers. Halle and Nicaise have done the work when the ramification is wild and the base is a Dedekind scheme, so their techniques could perhaps transpose to the higher-dimensional setting.
+\end{itemize}
+
+I am also interested in the number-theoretical applications of these higher-dimensional Néron models. For example, it may be possible to use them to make progress towards the uniform boundedness conjecture (as has already been done when a separated, quasi-compact Néron model exists).
+
+Of course, what I do exactly will depend on where I am working and who I am working with. I believe that I can be a good addition to a project related to birational geometry, curves, abelian varieties or moduli spaces, even if it is not in the direct continuity of my past research.
+
+\end{document}
