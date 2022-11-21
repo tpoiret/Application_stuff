@@ -1,0 +1,56 @@
+\begin{thebibliography}{MW22}
+
+\bibitem[Con]{conradsemistable}
+Brian Conrad.
+\newblock Semistable reduction for abelian varieties.
+\newblock In {\em Seminar Lecture Notes available at the webpage http://math.
+  stanford. edu/\~{} akshay/ntslearn. html}.
+
+\bibitem[Edi92]{EdixNeronTameRamif}
+Bas Edixhoven.
+\newblock N\'eron models and tame ramification.
+\newblock {\em Compositio Mathematica}, 81(3):291--306, 1992.
+
+\bibitem[EL21]{EdixhovenLido2021}
+Bas Edixhoven and Guido Lido.
+\newblock Geometric quadratic chabauty.
+\newblock {\em Journal of the Institute of Mathematics of Jussieu}, page
+  1–55, 2021.
+
+\bibitem[LT15]{Liu_2015}
+Qing Liu and Jilong Tong.
+\newblock N{\'e}ron models of algebraic curves.
+\newblock {\em Transactions of the American Mathematical Society},
+  368(10):7019--7043, Dec 2015.
+
+\bibitem[MW22]{Molcho2022TheLP}
+Samouil Molcho and Jonathan Wise.
+\newblock The logarithmic picard group and its tropicalization.
+\newblock {\em Compositio Mathematica}, 158:1477 -- 1562, 2022.
+
+\bibitem[N{\'e}r64]{Neron1964Modeles-minimau}
+Andr{\'e} N{\'e}ron.
+\newblock Mod{\`e}les minimaux des vari{\'e}t{\'e}s ab{\'e}liennes sur les
+  corps locaux et globaux.
+\newblock {\em Inst. Hautes {\'E}tudes Sci. Publ.Math. No.}, 21:128, 1964.
+
+\bibitem[Ogg67]{Ogg}
+A.~P. Ogg.
+\newblock Elliptic curves and wild ramification.
+\newblock {\em American Journal of Mathematics}, 89(1):1--21, 1967.
+
+\bibitem[Poi]{PoiretThesis}
+N\'eron models in high dimension: nodal curves, jacobians and tame base change.
+\newblock {\em Leiden university scholarly publications}.
+
+\bibitem[Poi22]{Poiret}
+Thibault Poiret.
+\newblock {N\'eron models of Jacobians over bases of arbitrary dimension}.
+\newblock {\em {Épijournal de Géométrie Algébrique}}, {Volume 6}, 2022.
+
+\bibitem[ST68]{SerreTate}
+Jean-Pierre Serre and John Tate.
+\newblock Good reduction of abelian varieties.
+\newblock {\em Annals of Mathematics}, 88(3):492--517, 1968.
+
+\end{thebibliography}

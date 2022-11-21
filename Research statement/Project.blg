@@ -1,0 +1,60 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Project.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: alpha.bst
+Reallocating 'name_of_file' (item size: 1) to 7 items.
+Database file #1: prebib.bib
+I was expecting a `,' or a `}'---line 28 of file prebib.bib
+ : 
+ : author={Poiret, Thibault},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--string name "sept." is undefined
+--line 843 of file prebib.bib
+Warning--to sort, need author or key in PoiretThesis
+Warning--empty year in conradsemistable
+Warning--empty author in PoiretThesis
+Warning--empty year in PoiretThesis
+You've used 10 entries,
+            2543 wiz_defined-function locations,
+            632 strings with 5984 characters,
+and the built_in function-call counts, 3548 in all, are:
+= -- 362
+> -- 117
+< -- 6
++ -- 35
+- -- 34
+* -- 245
+:= -- 572
+add.period$ -- 29
+call.type$ -- 10
+change.case$ -- 53
+chr.to.int$ -- 10
+cite$ -- 15
+duplicate$ -- 159
+empty$ -- 280
+format.name$ -- 48
+if$ -- 728
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 10
+newline$ -- 52
+num.names$ -- 27
+pop$ -- 48
+preamble$ -- 1
+purify$ -- 63
+quote$ -- 0
+skip$ -- 128
+stack$ -- 0
+substring$ -- 223
+swap$ -- 24
+text.length$ -- 6
+text.prefix$ -- 5
+top$ -- 0
+type$ -- 80
+warning$ -- 4
+while$ -- 33
+width$ -- 14
+write$ -- 126
+(There was 1 error message)

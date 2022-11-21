@@ -1,0 +1,81 @@
+\documentclass[12pt]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage{cite}
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\Spec}{Spec}
+
+\newtheorem{theorem}{Theorem}
+
+\title{Research statement}
+\author{Thibault Poiret}
+\date{November 2022}
+
+\begin{document}
+
+\maketitle
+
+I am an algebraic geometer. My areas of expertise are families of curves, Jacobians and logarithmic geometry. Logarithmic geometry has proved to be fruitful in the study of compactified Jacobians, e.g. in the recent groundbreaking work of Molcho and Wise \cite{Molcho2022TheLP}. It seems natural to expect that it would be just as powerful in studying degenerations of Prym varieties, but this direction remains essentially unexplored so far.
+
+I am always willing to expand my list of mathematical interests. In addition to degenerations of smooth curves and their Jacobians, I am currently working on links between logarithmic geometry, extended tropicalizations, and Gr\"obner theory. In the following paragraphs, I provide the necessary background, then describe the main results of my first two papers.
+
+\subsection*{Background on N\'eron models}
+
+My first research work was about the theory of Néron models. If $X_K$ is a scheme over the fraction field $K$ of an integral scheme $S$, a \emph{$S$-model} of $X_K$ is a $S$-scheme whose restriction to $\Spec K$ is $X_K$. In general, when $X_K$ is smooth and proper, it admits no smooth and proper model. For example, any elliptic curve $E$ over $\mathbb Q$ will have bad reduction at some primes, and we can only find a proper and smooth model of $E$ away from these primes. Therefore, in order to get a model $X$ of $X_K$ over all of $S$, we need to allow $X$ to be ``less nice". If we care about smoothness, the Néron model is the next best thing. It is defined as a smooth $S$-model $N$ of $X_K$ with the \emph{Néron mapping property}: for any smooth $S$-scheme $Y$, the restriction map $\Hom_S(Y,N) \to \Hom_K(Y_K,X_K)$ is bijective. N\'eron models play a key role in algebraic and arithmetic geometry, see e.g. \cite{Ogg}, \cite{SerreTate}, \cite{conradsemistable}, \cite{EdixhovenLido2021}.
+
+The Néron model of $X_K$ is always unique, but does not always exist: the projective line $\mathbb P^1_{\mathbb Q}$ has no Néron model over $\mathbb Z$. When $S$ is regular and one-dimensional (e.g. the spectrum of the ring of integers of a number field), then a separated Néron model exists if $X_K/K$ is an abelian variety by \cite{Neron1964Modeles-minimau}, and if $X_K$ is a curve of positive genus by \cite{Liu_2015}. When $S$ is a regular scheme, $X_K$ a smooth $K$-curve and $X/S$ a nodal model of $X_K$, Holmes introduced a condition on $X$ called \emph{alignment}, expressed in terms of graphs summarizing information on $X$, the \emph{dual graphs}. He showed that the Jacobian $J$ of $X_K$ can only have a separated Néron model if X is aligned; and exhibited such a Néron model when $X$ is regular and aligned.
+
+\subsection*{My thesis}
+
+During my PhD, I was interested in constructing N\'eron models for a smooth proper curve $X_K/K$ and its Jacobian, over a regular scheme $S$ with field of fractions $K$, when $X_K$ has a nodal $S$-model $X$. By the semistable reduction theorem, existence of a nodal model is a mild assumption. I showed that blowing up $X$ in the ideal sheaf of a non-smooth $S$-section yields a new nodal model $X'$ with bigger smooth locus, a \emph{basic refinement} of $X$. Iterating the process, we can construct various nodal models of $X_K$, the \emph{refinements} of $X$. I described how to compute the Picard space and dual graph of $X'$ in terms of those of $X$. I proved
+
+\begin{theorem}[{\cite[Theorem 7.6]{Poiret}}]\label{thm1}
+	Let $X/S$ be a nodal curve with $S$ regular, integral and quasi-excellent. Suppose the generic fiber $X_K/K$ is smooth. Then, the Jacobian $\operatorname{Pic}^0_{X_K/K}$ admits a N\'eron model $N/S$. For any \'etale map $V \to S$ and any refinement $X' \to X_V$, the kernel of the natural map $f_{X'}\colon\operatorname{Pic^0}_{X'/V} \to N$ is the $S$-\'etale part of the scheme-theoretic closure of the unit section in $\operatorname{Pic^0}_{X'/V}$. The $f_{X'}$ are jointly surjective.
+\end{theorem}
+
+I introduced a combinatorial criterion more restrictive than Holmes's alignment, called \emph{strict alignment}, and showed
+
+\begin{theorem}[{\cite[Theorem 7.13]{Poiret}}]
+	In the setting of Theorem \ref{thm1}, the N\'eron model $N$ is separated if and only if $X$ is strictly aligned.
+\end{theorem}
+
+Then, I tried to construct a N\'eron model for the curve $X_K$ itself. In work in preparation, I prove the following result. A weaker (but peer-reviewed) version can be found in \cite[Theorem 7.40]{PoiretThesis}.
+
+\begin{theorem}\label{thm3}
+	Let $S$ be an integral, regular, quasi-excellent scheme with fraction field $K$ and $X/S$ a nodal curve, smooth over $\Spec K$. Then $X_K$ admits a N\'eron model $N$ over $S$. For any \'etale morphism $V \to S$ and any nodal model $X'$ of $X_K\times_S V$, the natural map $(X'/S)^{\operatorname{smooth}} \to N_V$ is an open immersion. The composites $f_{X'}\colon (X'/S)^{\operatorname{smooth}} \to N$ are jointly surjective as $X'$ varies.
+\end{theorem}
+
+The joint surjectivity of the $f_{X'}$ already holds for a very manageable collection of such $X'$: we may partition $S$ into locally constructible strata, and we only need a finite family of $X'$ on each stratum, which admits a nice combinatorial description.
+
+Here too one can find a combinatorial criterion for separatedness:
+
+\begin{theorem}[{\cite[Theorem 7.48]{PoiretThesis}}]
+	In the setup of Theorem \ref{thm3}, suppose $X_K$ admits a stable model $X^{stable}$ (which holds after base change to a finite \'etale cover of $S$). Then, the N\'eron model of $X_K$ is separated if and only if the non-smooth locus of $X^{stable}/S$ is locally irreducible in the \'etale topology, i.e. if the smoothing parameter of $X^{stable}/S$ at every node is a prime power.
+\end{theorem}
+
+N\'eron models are not compatible with base change: they tend to grow in size when the base gets ramified. I studied the base change behavior of N\'eron models of abelian varieties under finite, tamely ramified covers of regular schemes, generalizing work of Edixhoven over one-dimensional bases \cite{EdixNeronTameRamif}. More precisely, I showed
+\begin{theorem}[{\cite[Theorem 10.5]{PoiretThesis}}]
+	Let $S$ be an integral and regular scheme, $K=\operatorname{Frac}S$, $S' \to S$ a finite, tamely ramified cover and $X$ a smooth $K$-scheme. Suppose $X_{K'}$ has a N\'eron model $N'$, then $X_K$ has a N\'eron model $N$. If $S$ is the quotient of $S'$ under the action of a finite group $G$, then $N$ is the quotient of the Weil restriction of $N'$ to $S$ by the natural $G$-action.
+\end{theorem}
+
+Suppose $X_K$ is an abelian variety, and $S'$ is obtained from $S$ by adding roots $(g_1,...,g_n)$ to regular parameters in some system $(f_1,...,f_n)$. The $f_i$ induce a partition of $S$ into locally closed strata. Call $Z$ the closed stratum. I exhibited a natural filtration of closed stratum $N_Z$ of the N\'eron model into sub-$Z$-group spaces, and showed that the successive quotients of this filtration can be expressed in terms of twisted Lie algebras of $N'_Z$ (\cite[Theorem 10.13]{PoiretThesis}).
+
+\subsection*{Logarithmic geometry}
+
+There is a deep link between the base change behaviour of N\'eron models of smooth objects with semistable reduction and logarithmic geometry: in a sense, we may think of logarithmically smooth objects as ``gluing together all appropriate blow-ups of a semistable object", and of N\'eron models as ``gluing the smooth loci of these appropriate blow-ups".
+
+Together with David Holmes, Samouil Molcho and Giulio Orecchia, we formalized this link in the case of Jacobians. There is a natural model of the Jacobian in logarithmic geometry, the logarithmic Jacobian of Molcho-Wise. We gave a sheaf-theoretic description of the log Jacobian, which expresses it as a torsor under the Jacobian and over a sheaf of dual graphs. We showed that one obtains the N\'eron model of the Jacobian by taking the image of the log Jacobian under a natural functor from log schemes to schemes. This gives a moduli interpretation for the N\'eron model.
+
+Then, I continued working with logarithmic and tropical geometry. In work in preparation, I studied the base change behavior of logarithmic line bundles under tautological maps of curves (``detaching a family of nodes"). Given a log curve $Y$ and two smooth sections, we may ``glue the two sections into a node" to obtain a new curve $X$. Scheme-theoretically, there is a map $Y \to X$, but there are subtleties regarding how to turn this into a map of log schemes. Still, we have a natural map from the log Picard group of $X$ to a quotient of that of $Y$. I show that this map almost never lifts along the quotient, and describe a delicate class of instances where it does.
+
+Logarithmic geometers almost always work with fine, saturated log schemes (or fs log schemes). In a loose sense, log schemes are ``schemes which remember some information about an ambient space", and fine, saturated ones are ``schemes that remember some information about an integral, normal, finitely presented ambient space". Natural operations in the category of log schemes, such as fibre products, do not preserve the fs subcategory. It is common to fix this by taking limits in the fs category itself, which comes down to postcomposing with a ``fine saturation" functor. In work in preparation with Dhruv Ranganathan, we show that classical Gr\"obner basis algorithms can be adapted to compute explicitly the fine saturation of a log scheme, and explain how this relates to fibre products of toric varieties and their extended tropicalizations.
+
+
+I have several ideas of projects for future research. With Sara Mehidi, we are thinking of investigating the problem of extension of torsors from the moduli of smooth curves to the moduli of stable curves. In other words, we want to determine conditions under which a group sheaf and a torsor for that group sheaf on a family of smooth curves can be extended to the stable model. With Patrick Kennedy-Hunt, we are thinking of constructing a good notion of logarithmic structure sheaf, with a view towards providing a unifying framework to the constructions of logarithmic Picard group, logarithmic Quot and Hilb schemes, etc. Of course, since I am applying for this position, I would be happy to think about constructing moduli spaces for Prym varieties and their tropicalizations - and about any interesting problem that may appear in front of me.
+
+\bibliographystyle{alpha}
+\bibliography{prebib}
+
+\end{document}
